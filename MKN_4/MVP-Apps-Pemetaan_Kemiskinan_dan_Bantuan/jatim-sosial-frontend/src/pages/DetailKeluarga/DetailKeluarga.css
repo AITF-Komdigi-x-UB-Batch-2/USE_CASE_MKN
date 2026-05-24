@@ -1,0 +1,276 @@
+/* DetailKeluarga.css - Read-Only View */
+
+.detail-keluarga-wrapper {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 1400px;
+}
+
+/* ── Page Header ──────────────────────────── */
+.dk-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.dk-title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.dk-subtitle {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.dk-id-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+
+.dk-id-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #9ca3af;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.dk-id-value {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2563eb;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 0.04em;
+}
+
+/* ── Hero Strip ───────────────────────────── */
+.dk-hero-strip {
+  display: flex;
+  align-items: center;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 20px 32px;
+  gap: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.dk-hero-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+  min-width: 0;
+}
+
+.dk-hero-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #9ca3af;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.dk-hero-value {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111827;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dk-hero-desil {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 2px 10px;
+  border-radius: 20px;
+  border: 1.5px solid;
+  background: transparent;
+  width: fit-content;
+}
+
+.dk-hero-divider {
+  width: 1px;
+  height: 40px;
+  background-color: #e5e7eb;
+  margin: 0 28px;
+  flex-shrink: 0;
+}
+
+/* ── Cards Grid ───────────────────────────── */
+.dk-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 20px;
+}
+
+.dk-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+.dk-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  border-bottom: 1px solid #f3f4f6;
+  background: #fafafa;
+}
+
+.dk-card-title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1f2937;
+  letter-spacing: 0.01em;
+}
+
+.dk-card-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.icon-blue   { background: #eff6ff; color: #2563eb; }
+.icon-purple { background: #f5f3ff; color: #7c3aed; }
+.icon-green  { background: #f0fdf4; color: #16a34a; }
+.icon-orange { background: #fff7ed; color: #ea580c; }
+
+.dk-card-body {
+  padding: 8px 0;
+}
+
+/* ── Info Rows ────────────────────────────── */
+.dk-info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 10px 20px;
+  gap: 16px;
+  border-bottom: 1px solid #f9fafb;
+}
+
+.dk-info-row:last-child {
+  border-bottom: none;
+}
+
+.dk-info-label {
+  font-size: 13px;
+  color: #6b7280;
+  font-weight: 500;
+  flex-shrink: 0;
+  min-width: 140px;
+}
+
+.dk-info-value {
+  font-size: 13px;
+  font-weight: 600;
+  color: #111827;
+  text-align: right;
+  word-break: break-word;
+}
+
+/* ── Aset Grid ────────────────────────────── */
+.dk-aset-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: #f3f4f6;
+  border-top: 1px solid #f3f4f6;
+}
+
+.dk-aset-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  background: white;
+  gap: 8px;
+}
+
+.dk-aset-item.no-aset {
+  opacity: 0.45;
+}
+
+.dk-aset-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.dk-aset-count {
+  font-size: 13px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.dk-aset-item.has-aset .dk-aset-count {
+  color: #2563eb;
+  background: #eff6ff;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+/* ── Responsive ───────────────────────────── */
+@media (max-width: 900px) {
+  .dk-hero-strip {
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .dk-hero-divider {
+    display: none;
+  }
+
+  .dk-hero-item {
+    flex: none;
+    width: calc(50% - 8px);
+  }
+
+  .dk-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .detail-keluarga-wrapper {
+    padding: 16px;
+  }
+
+  .dk-header {
+    flex-direction: column;
+  }
+
+  .dk-id-badge {
+    align-items: flex-start;
+  }
+
+  .dk-hero-item {
+    width: 100%;
+  }
+
+  .dk-aset-grid {
+    grid-template-columns: 1fr;
+  }
+}

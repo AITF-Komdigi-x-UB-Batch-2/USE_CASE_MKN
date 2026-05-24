@@ -1,0 +1,49 @@
+# ==============================================================================
+# UNIFIED GITIGNORE - SYSTEM PEMETAAN KEMISKINAN JATIM SOSIAL (MVP)
+# ==============================================================================
+
+# ─── 1. SENSITIVE CREDENTIALS (SANGAT PENTING!) ──────────────────────────────
+.env
+**/.env
+*.env
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ─── 2. BACKEND SPECIFIC (FASTAPI) ───────────────────────────────────────────
+jatim-sosial-backend/venv/
+jatim-sosial-backend/data_tim1.csv
+jatim-sosial-backend/chroma_data/chroma.sqlite3
+jatim-sosial-backend/__pycache__/
+jatim-sosial-backend/*.pyc
+jatim-sosial-backend/.pytest_cache/
+jatim-sosial-backend/foto_tersimpan/
+
+# ─── 3. FRONTEND SPECIFIC (REACT + VITE) ─────────────────────────────────────
+jatim-sosial-frontend/node_modules/
+jatim-sosial-frontend/dist/
+jatim-sosial-frontend/dist-ssr/
+jatim-sosial-frontend/*.local
+
+# ─── 4. LOGS AND TEMPORARY FILES ─────────────────────────────────────────────
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ─── 5. IDE, EDITOR, & SYSTEM FILES ──────────────────────────────────────────
+.vscode/
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

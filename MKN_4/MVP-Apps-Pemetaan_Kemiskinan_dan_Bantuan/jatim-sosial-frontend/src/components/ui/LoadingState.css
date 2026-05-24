@@ -1,0 +1,25 @@
+.loading-state-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 24px;
+  text-align: center;
+}
+
+.loading-spinner-icon {
+  color: #3b82f6;
+  animation: spinner-spin 1s linear infinite;
+  margin-bottom: 12px;
+}
+
+.loading-state-text {
+  font-size: 15px;
+  font-weight: 500;
+  color: #64748b;
+  margin: 0;
+}
+
+@keyframes spinner-spin {
+  to { transform: rotate(360deg); }
+}

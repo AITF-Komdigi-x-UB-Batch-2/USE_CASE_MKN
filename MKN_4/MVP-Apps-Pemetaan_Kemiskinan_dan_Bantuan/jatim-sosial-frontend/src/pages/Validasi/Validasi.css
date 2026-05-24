@@ -1,0 +1,385 @@
+.validasi-page-wrapper {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Header Section */
+.validasi-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.validasi-title-area h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 4px 0;
+}
+
+.validasi-title-area p {
+  color: #6b7280;
+  font-size: 14px;
+  margin: 0;
+}
+
+.validasi-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-secondary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  color: #374151;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: #f3f4f6;
+}
+
+.btn-primary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background-color: #2563eb;
+  border: 1px solid #2563eb;
+  border-radius: 6px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+}
+
+/* Tabs Section */
+.validasi-tabs {
+  display: flex;
+  border-bottom: 1px solid #e5e7eb;
+  gap: 32px;
+  margin-top: 8px;
+}
+
+.tab-item {
+  background: none;
+  border: none;
+  padding: 12px 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.2s;
+}
+
+.tab-item:hover {
+  color: #374151;
+}
+
+.tab-item.active {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.tab-item.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #2563eb;
+}
+
+/* Filter Panel */
+.filter-panel {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  background-color: transparent;
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  min-width: 180px;
+  max-width: 250px;
+}
+
+.filter-group label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #6b7280;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.filter-group select {
+  padding: 10px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #374151;
+  background-color: #ffffff;
+  outline: none;
+  transition: border-color 0.2s;
+  width: 100%;
+}
+
+.filter-group select:focus {
+  border-color: #2563eb;
+}
+
+.btn-reset-filter {
+  padding: 10px 24px;
+  background-color: #e2e8f0;
+  color: #475569;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  height: 42px; /* match select height */
+}
+
+.btn-reset-filter:hover {
+  background-color: #cbd5e1;
+}
+
+/* Table Section */
+.table-card-validasi {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.validasi-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.validasi-table th {
+  background-color: #f8fafc;
+  color: #6b7280;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 16px 24px;
+  border-bottom: 1px solid #e5e7eb;
+  white-space: nowrap;
+}
+
+.validasi-table td {
+  padding: 16px 24px;
+  border-bottom: 1px solid #e5e7eb;
+  vertical-align: middle;
+}
+
+.validasi-table tr {
+  transition: background-color 0.2s;
+}
+
+.validasi-table tr:hover {
+  background-color: #f8fafc;
+}
+
+.link-id-kasus {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+}
+
+.link-id-kasus:hover {
+  text-decoration: underline;
+}
+
+.sub-text {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+/* Badges */
+.badge-prioritas {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.dot-indicator {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.badge-prioritas-tinggi {
+  background-color: #fee2e2;
+  color: #dc2626;
+}
+
+.badge-prioritas-sedang {
+  background-color: #fef3c7;
+  color: #d97706;
+}
+
+.badge-prioritas-rendah {
+  background-color: #f1f5f9;
+  color: #475569;
+}
+
+.badge-dtks-terdata {
+  display: inline-flex;
+  padding: 4px 10px;
+  background-color: #dcfce7;
+  color: #16a34a;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.badge-dtks-belum {
+  display: inline-flex;
+  padding: 4px 10px;
+  background-color: #f1f5f9;
+  color: #64748b;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Action Buttons Grid */
+.action-buttons-cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-icon-view {
+  background: transparent;
+  border: none;
+  color: #9ca3af;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.btn-icon-view:hover {
+  color: #4b5563;
+  background-color: #f3f4f6;
+}
+
+.btn-action {
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: opacity 0.2s;
+}
+
+.btn-action:hover {
+  opacity: 0.9;
+}
+
+.btn-setuju {
+  background-color: #16a34a;
+  color: #ffffff;
+}
+
+.btn-tolak {
+  background-color: #dc2626;
+  color: #ffffff;
+}
+
+/* Pagination */
+.pagination-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+}
+
+.pagination-info {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.btn-page {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  color: #374151;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-page:hover:not(.active) {
+  background-color: #f3f4f6;
+}
+
+.btn-page.active {
+  background-color: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+}
+
+.page-dots {
+  color: #6b7280;
+  padding: 0 4px;
+}

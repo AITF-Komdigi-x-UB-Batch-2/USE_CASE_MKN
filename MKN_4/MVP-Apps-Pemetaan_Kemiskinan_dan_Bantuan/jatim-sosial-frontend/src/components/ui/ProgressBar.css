@@ -1,0 +1,11 @@
+.progress-awal {
+  background-color: #ef4444; /* Red for early */
+}
+
+.progress-berjalan {
+  background-color: #eab308; /* Yellow/Orange for mid */
+}
+
+.progress-selesai {
+  background-color: #22c55e; /* Green for near complete */
+}

@@ -1,0 +1,29 @@
+/* ===========================================
+   Landing Page — Decorative Elements
+   =========================================== */
+
+/* Hero background gradient blob
+   This is a purely decorative element that creates a soft,
+   blurred gradient behind the hero text. Exact pixel values
+   are not critical — they just need to look visually balanced. */
+.hero-gradient-blob {
+  position: relative;
+  left: calc(50% - 11rem);             /* Offset from center */
+  aspect-ratio: 16 / 9;                /* Simplified from 1155/678 ≈ 1.7:1 */
+  width: 36rem;                        /* ~576px base width */
+  transform: translateX(-50%) rotate(30deg);
+  background: linear-gradient(
+    to top right,
+    var(--color-blue-100),
+    var(--color-slate-200)
+  );
+  opacity: 0.6;
+}
+
+/* Scale up on larger screens for full-bleed effect */
+@media (min-width: 640px) {
+  .hero-gradient-blob {
+    left: calc(50% - 30rem);
+    width: 72rem;                      /* ~1152px — fills wide viewports */
+  }
+}

@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #F6F6F8;
+  font-family: 'Inter', sans-serif;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.login-card {
+  background: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.04);
+  width: 100%;
+  max-width: 440px;
+  padding: 40px 32px;
+  box-sizing: border-box;
+}
+
+/* Header Section */
+.login-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.login-logo {
+  height: 64px;
+  margin-bottom: 16px;
+}
+
+.login-agency {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 4px 0;
+  letter-spacing: -0.01em;
+}
+
+.login-agency-sub {
+  font-size: 12px;
+  font-weight: 600;
+  color: #6B7280;
+  margin: 0;
+  letter-spacing: 0.05em;
+}
+
+.login-divider {
+  height: 1px;
+  background-color: #F3F4F6;
+  margin: 24px 0;
+  width: 100%;
+}
+
+/* System Title */
+.login-system-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.login-system-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 8px 0;
+}
+
+.login-system-desc {
+  font-size: 13px;
+  color: #6B7280;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Form Styles */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #374151;
+  text-align: left;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  background-color: #F9FAFB;
+  transition: all 0.2s ease;
+}
+
+.input-wrapper:focus-within {
+  border-color: #2563EB;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.input-icon {
+  margin-left: 14px;
+  color: #9CA3AF;
+  flex-shrink: 0;
+}
+
+.input-wrapper input {
+  flex: 1;
+  border: none !important;
+  background: transparent !important;
+  padding: 12px 14px;
+  font-size: 14px;
+  color: #111827;
+  outline: none !important;
+  box-shadow: none !important;
+  -webkit-appearance: none;
+}
+
+.input-wrapper input::placeholder {
+  color: #9CA3AF;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  padding: 0 14px;
+  color: #9CA3AF;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+
+.icon-button:hover {
+  color: #4B5563;
+}
+
+/* Form Actions Row */
+.form-actions-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -4px;
+  margin-bottom: 4px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #4B5563;
+  cursor: pointer;
+  user-select: none;
+  gap: 8px;
+}
+
+.checkbox-container input {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #D1D5DB;
+  border-radius: 4px;
+  cursor: pointer;
+  accent-color: #2563EB;
+}
+
+.forgot-password {
+  font-size: 13px;
+  font-weight: 600;
+  color: #2563EB;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.forgot-password:hover {
+  color: #1D4ED8;
+}
+
+/* Submit Button */
+.login-submit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background-color: #2563EB;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 100%;
+}
+
+.login-submit-btn:hover {
+  background-color: #1D4ED8;
+}
+
+/* Warning Footer */
+.login-warning {
+  margin-top: 32px;
+  padding: 16px;
+  background-color: #FEFCE8;
+  border: 1px solid #FEF08A;
+  border-radius: 8px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.warning-icon {
+  color: #EAB308;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.warning-text {
+  font-size: 11px;
+  color: #713F12;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.warning-text strong {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+
+.warning-text p {
+  margin: 0;
+}
