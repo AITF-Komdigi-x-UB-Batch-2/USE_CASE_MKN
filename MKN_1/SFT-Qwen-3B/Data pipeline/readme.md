@@ -1,4 +1,4 @@
-# Pipeline Data Penerima Manfaat PKH Plus & ASPD
+# Pipeline Data Penerima Bansos PKH Plus & ASPD
 
 Dokumen ini menjelaskan struktur data dan logika pemrosesan yang diimplementasikan dalam skrip [process_pkh_data.py]untuk menghasilkan dataset percakapan (SFT - *Supervised Fine-Tuning*) bagi AI Auditor Dinas Sosial Provinsi Jawa Timur.
 
